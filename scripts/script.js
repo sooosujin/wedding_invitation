@@ -25,4 +25,60 @@ document.addEventListener("DOMContentLoaded", function () {
     
   });
 });    
-  
+ 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".container")
+
+  const handleWheel = (e) => {
+    e.preventDefault()
+    const delta = Math.sign(e.deltaY)
+    const currentSection = Math.round(container.scrollTop / window.innerHeight)
+    const nextSection = currentSection + delta
+    container.scrollTo({
+      top: nextSection * window.innerHeight,
+      behavior: "smooth",
+    })
+  }
+
+  container.addEventListener("wheel", handleWheel, { passive: false })
+
+  // Touch events for mobile devices
+  let touchStartY = 0
+  let touchEndY = 0
+
+  container.addEventListener(
+    "touchstart",
+    (e) => {
+      touchStartY = e.touches[0].clientY
+    },
+    { passive: true },
+  )
+
+  container.addEventListener(
+    "touchmove",
+    (e) => {
+      touchEndY = e.touches[0].clientY
+    },
+    { passive: true },
+  )
+
+  container.addEventListener(
+    "touchend",
+    () => {
+      const delta = touchStartY - touchEndY
+      if (Math.abs(delta) > 50) {
+        // Minimum swipe distance
+        const direction = delta > 0 ? 1 : -1
+        const currentSection = Math.round(container.scrollTop / window.innerHeight)
+        const nextSection = currentSection + direction
+        container.scrollTo({
+          top: nextSection * window.innerHeight,
+          behavior: "smooth",
+        })
+      }
+    },
+    { passive: true },
+  )
+})
+
