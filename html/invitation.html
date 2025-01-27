@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Swiper CSS -->
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <script src="/scripts/script.js"></script>
+    <div class="container">
+        <!-- 01_Main Image -->
+        <section class="section text-center">
+          <h2><span class="leaf"></span> Main Image </h2>
+          <div class="video-placeholder">Main Image Placeholder</div>
+        </section>
+        <!-- 02_Our Stroy -->
+        <section class="section text-center">
+            <h2><span class="leaf">🍃</span> Our story <span class="leaf">🍃</span></h2>
+            <!-- 영상 첨부 예정 (약 4분) -->
+            <div class="video-placeholder">Video Placeholder</div>
+            <p>
+                함께 커피를 마시고 아이스크림을 먹고<br>
+                걷고 달리고 몸고 담하고<br>
+                별을 보고 풀내음을 맡고, 바람과 눈비를 맞고<br>
+                손을 맞잡고 기쁨과 슬픔을 동과하는 사간들이<br>
+                서로를 더없이 충분하게 만들기에<br><br>
+                더욱 가까이에서 함께하고자 합니다.
+            </p>
+        </section>
+        <!-- 03_Image Gallery -->
+        <section class="section text-center" style="background-color: #f8f8f8;">
+            <p>
+                설레이는 삶의 시작을 약속하는 자리에<br>
+                함께해주신다면 더없이 기쁘겠습니다.
+            </p>
+            <p>
+                권미애 · 황순영의 아들 <strong>권 세 훈</strong><br>
+                주태옥 · 홍태표의 딸 <strong>홍 승 혜</strong>
+            </p>
+            <!-- 웨딩사진 10장 정도 들어갈 예정 -->
+             <!-- 
+              1. 사진 press 했을 때 좌우 swipe 시 사진 넘어가게
+              2. 사진 press 하지 않은 상태에서 좌우 swipe 시 중앙 사진 변경 되도록
+             -->
+             <!-- 원래 이미지 태그 -->
+              <!--  
+            <div class="image-grid">
+                <div class="image-placeholder"></div>
+                <div class="image-placeholder"></div>
+                <div class="image-placeholder"></div>
+            </div>
+             -->
+             <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="/img/wedding_1.jpg" alt="Wedding Image 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/wedding_2.jpg" alt="Wedding Image 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/wedding_3.jpg" alt="Wedding Image 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/img/wedding_4.jpg" alt="Wedding Image 4">
+                    </div>
+                </div>
+                <!-- Optional navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Optional pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- 04_Date $ Time -->
+        <section class="section text-center">
+            <h2>2025. 6. 7</h2>
+            <p>토요일, 오후 5시</p>
+            <p>
+                <strong>4시부터 웰컴 디저트와 음료</strong>가 준비되어 있으니<br>
+                일찍 오셔서 편히 즐겨주세요.
+            </p>
+            <!-- 캘린더에 6/7 하이라이트 -->
+            <div class="video-placeholder">Calendar Placeholder</div>
+            <p>16:00 ~ 17:00 웰컴파티 🍰☕️🎈</p>
+            <!-- 예식에 나중에 이미지로 하이라이트 예정 -->
+            <p>17:00 ~ 17:30 <strong>예식</strong> 👰🤵</p>
+            <p>17:30 ~ 19:00 만찬 🍖🍷🎉</p>
+        </section>
+        <!-- 05_Location -->
+        <section class="section text-center" style="background-color: #f8f8f8;">
+            <h3>연세대학교 알렌관</h3>
+            <p>서울 서대문구 연세로 50 연세대학교 알렌관</p>
+            <p><span class="leaf">🍃</span> 동문회관이 아닌 <strong>알렌관 야외예식장</strong>입니다.</p>
+            <!-- map은 네이버 지도로 -->
+            <div class="map-placeholder">Map Placeholder</div>
+            <!-- 네이버 지도로 보기 누르면 네이버 지도 app 연결되면서 '연세대학교 알렌관' 주소 페이지 열기 -->
+            <a href="#" class="button">네이버 지도로 보기</a>
+            <!-- 카카오 내비로 보기 누르면 카카오 내비 app 연결되면서 '연세대학교 알렌관' 주소 페이지 열기 -->
+            <a href="#" class="button">카카오 내비로 보기</a>
+            <p>자가용 알렌관 앞 □□□□□ 건물 주차 (170대 주차 가능)</p>
+            <p>
+                대중교통 <span style="color: #4CAF50;">신촌역</span> 하차 - 
+                <span style="color: #2196F3;">678번</span> 버스탑승
+                - 이대후문에서 하차 - 도보 5분
+            </p>
+        </section>
+        <!-- 06_Contact -->
+         <!-- 가능하다면 방명록 기능도 넣고 싶다고 함 -->
+        <section class="section text-center">
+            <p>
+                참석이 어려워 직접 축하를 전하지 못하는<br>
+                분들을 위해 기재하였습니다.<br>
+                넓은 마음으로 양해 부탁드립니다.<br>
+                전해주시는 진심은 소중히 간직하여<br>
+                좋은 부부의 모습으로 보답하겠습니다.
+            </p>
+            <div class="account-info">
+                <p>👨 신랑측</p>
+                <p>혼주 권미애 국민 101010101010101000000</p>
+                <button onclick="copyToClipboard('101010101010101000000')">계좌번호 복사하기</button>
+            </div>
+            <div class="account-info">
+                <p>👰 신부측</p>
+                <p>혼주 홍태표 국민 101010101010101000000</p>
+                <button onclick="copyToClipboard('101010101010101000000')">계좌번호 복사하기</button>
+            </div>
+        </section>
+    </div>
+
+    
+</body>
+</html>
