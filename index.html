@@ -12,6 +12,8 @@
     />
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Naver Map -->
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=l6y3d9aogk"></script>
 </head>
 <body>
     <script src="./scripts/script.js"></script>
@@ -28,9 +30,9 @@
             <div class="video-placeholder">Video Placeholder</div>
             <p>
                 함께 커피를 마시고 아이스크림을 먹고<br>
-                걷고 달리고 몸고 담하고<br>
+                걷고 달리고 묻고 답하고<br>
                 별을 보고 풀내음을 맡고, 바람과 눈비를 맞고<br>
-                손을 맞잡고 기쁨과 슬픔을 동과하는 사간들이<br>
+                손을 맞잡고 기쁨과 슬픔을 통과하는 시간들이<br>
                 서로를 더없이 충분하게 만들기에<br><br>
                 더욱 가까이에서 함께하고자 합니다.
             </p>
@@ -42,7 +44,7 @@
                 함께해주신다면 더없이 기쁘겠습니다.
             </p>
             <p>
-                권미애 · 황순영의 아들 <strong>권 세 훈</strong><br>
+                권미애 · 황순영의 아들 <strong>권 세 흔</strong><br>
                 주태옥 · 홍태표의 딸 <strong>홍 승 혜</strong>
             </p>
             <!-- 웨딩사진 10장 정도 들어갈 예정 -->
@@ -83,18 +85,20 @@
         </section>
         <!-- 04_Date $ Time -->
         <section class="section text-center">
-            <h2>2025. 6. 7</h2>
+            <!-- <h2>2025. 6. 7</h2>
             <p>토요일, 오후 5시</p>
             <p>
                 <strong>4시부터 웰컴 디저트와 음료</strong>가 준비되어 있으니<br>
                 일찍 오셔서 편히 즐겨주세요.
-            </p>
+            </p> -->
             <!-- 캘린더에 6/7 하이라이트 -->
-            <div class="video-placeholder">Calendar Placeholder</div>
+            <div id="calendar">Calendar Placeholder</div>
+            
+             <!-- 예식에 나중에 이미지로 하이라이트 예정 -->
+            <!-- <div id="calendar" class="video-placeholder">Calendar Placeholder</div>
             <p>16:00 ~ 17:00 웰컴파티 🍰☕️🎈</p>
-            <!-- 예식에 나중에 이미지로 하이라이트 예정 -->
             <p>17:00 ~ 17:30 <strong>예식</strong> 👰🤵</p>
-            <p>17:30 ~ 19:00 만찬 🍖🍷🎉</p>
+            <p>17:30 ~ 19:00 만찬 🍖🍷🎉</p> -->
         </section>
         <!-- 05_Location -->
         <section class="section text-center" style="background-color: #f8f8f8;">
@@ -102,16 +106,16 @@
             <p>서울 서대문구 연세로 50 연세대학교 알렌관</p>
             <p><span class="leaf">🍃</span> 동문회관이 아닌 <strong>알렌관 야외예식장</strong>입니다.</p>
             <!-- map은 네이버 지도로 -->
-            <div class="map-placeholder">Map Placeholder</div>
-            <!-- 네이버 지도로 보기 누르면 네이버 지도 app 연결되면서 '연세대학교 알렌관' 주소 페이지 열기 -->
-            <a href="#" class="button">네이버 지도로 보기</a>
+            <div id="map" style="width:100%; height:300px;"></div>
+            <!-- 네이버 지도로 보기 누르면 네이버 지도 app 연결되면서 '연세대학교 알렌관' 주소 페이지 열기 -->            
+            <button id="openNaverMapButton" >네이버 지도로 보기</button>
             <!-- 카카오 내비로 보기 누르면 카카오 내비 app 연결되면서 '연세대학교 알렌관' 주소 페이지 열기 -->
-            <a href="#" class="button">카카오 내비로 보기</a>
+            <button id="openKakaoMapButton" >카카오 내비로 보기</button>
             <p>자가용 알렌관 앞 □□□□□ 건물 주차 (170대 주차 가능)</p>
             <p>
                 대중교통 <span style="color: #4CAF50;">신촌역</span> 하차 - 
                 <span style="color: #2196F3;">678번</span> 버스탑승
-                - 이대후문에서 하차 - 도보 5분
+                <p>- 이대후문에서 하차 - 도보 5분</p>
             </p>
         </section>
         <!-- 06_Contact -->
