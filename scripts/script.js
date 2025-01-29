@@ -11,7 +11,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper('.swiper-container', {
     // Swiper 옵션
-    slidesPerView: 3, // 한 번에 보여줄 슬라이드 수
+    slidesPerView: window.innerWidth > 768 ? 3 : 1.2, // 모바일에서 1.2개만 보이게
+    /* slidesPerView: 3, // 한 번에 보여줄 슬라이드 수 */
     spaceBetween: 10, // 슬라이드 간 간격
     centeredSlides: true, // 가운데 슬라이드 강조
     loop: true, // 무한 루프
