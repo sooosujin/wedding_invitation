@@ -189,6 +189,11 @@ document.addEventListener('DOMContentLoaded', function () {
       const contentDiv = document.getElementById('calendar');
       contentDiv.innerHTML = htmlContent;
 
+      // ✅ 동적으로 가운데 정렬 스타일 추가
+        contentDiv.style.display = "flex";
+        contentDiv.style.justifyContent = "center";
+        contentDiv.style.alignItems = "center";
+
       // 삽입된 HTML 내의 script 태그 실행
       const scripts = contentDiv.querySelectorAll('script');
       scripts.forEach(script => {
