@@ -7,7 +7,7 @@
         font-display: swap;
     }
       body {
-          font-family: 'Pretendard-Regular','Apple SD Gothic Neo', 'Malgun Gothic',sans-serif;
+          font-family: 'Pretendard-Regular','Apple SD Gothic Neo', 'Malgun Gothic', 'sans-serif';
           margin: 0;
           padding: 0;
           background-color: #f8f8f8;
@@ -72,13 +72,22 @@
       #openKakaoMapButton, #openNaverMapButton {
         display: inline-block;
           padding: 0.5rem 1rem;
-          background-color: #4CAF50;
-          color: #fff;
+          background-color: #ffffff;
+          color: #333;
           text-decoration: none;
           border-radius: 4px;
           margin: 0.5rem;
           font-size: 0.9rem;
 
+      }
+
+     #garden-highlight strong {
+        background-color: rgba(255, 255, 0, 0.375); /* 연한 노란색 */
+            padding: 2px 4px;
+            border-radius: 3px;
+      }
+      .transfortation-info{
+        font-size: 0.7rem;
       }
       .image-grid {
         display: none;
@@ -95,24 +104,35 @@
           border-radius: 8px;
       }
       .account-info {
-          background-color: #f0f0f0;
-          padding: 1rem;
+         /* background-color: #f0f0f0;  */
+          padding: 20px;
           margin-bottom: 1rem;
           border-radius: 4px;
           font-size: 0.9rem;
       }
+      .account-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .account-details {
+        font-size: 14px;
+        color: #333;
+    }
       .account-info button {
-          margin-top: 0.5rem;
-          padding: 0.5rem;
-          background-color: #4CAF50;
-          color: #fff;
-          border: none;
-          border-radius: 4px;
-          font-size: 0.9rem;
-          cursor: pointer;
+            width: 100%;
+            padding: 12px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #666;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
       }
       .account-info button:hover {
-          background-color: #45a049;
+          background-color: #fffef0b0;
       }
       /* 이미지 스와이프 관련 */
       .swiper-container {

@@ -102,25 +102,38 @@
         </section>
         <!-- 05_Location -->
         <section class="section text-center" style="background-color: #f8f8f8;">
-            <h3>연세대학교 알렌관</h3>
-            <p>서울 서대문구 연세로 50 연세대학교 알렌관</p>
-            <p><span class="leaf">🍃</span> 동문회관이 아닌 <strong>알렌관 야외예식장</strong>입니다.</p>
+            <h3>연세대학교 알렌관 야외정원</h3>
+            <p>서울 서대문구 연세로 50</p>
+            <p id = "garden-highlight"><span class="leaf">🍃</span> 동문회관이 아닌 <strong>알렌관 야외정원</strong>입니다.</p>
             <!-- map은 네이버 지도로 -->
             <div id="map" style="width:100%; height:300px;"></div>
             <!-- 네이버 지도로 보기 누르면 네이버 지도 app 연결되면서 '연세대학교 알렌관' 주소 페이지 열기 -->            
             <button id="openNaverMapButton" >네이버 지도로 보기</button>
             <!-- 카카오 내비로 보기 누르면 카카오 내비 app 연결되면서 '연세대학교 알렌관' 주소 페이지 열기 -->
             <button id="openKakaoMapButton" >카카오 내비로 보기</button>
-            <p>자가용 알렌관 앞 □□□□□ 건물 주차 (170대 주차 가능)</p>
-            <p>
-                대중교통 <span style="color: #4CAF50;">신촌역</span> 하차 - 
-                <span style="color: #2196F3;">678번</span> 버스탑승
-                <p>- 이대후문에서 하차 - 도보 5분</p>
-            </p>
+            <div class="transfortation-info">
+                <p>
+                    <p>지하철</p>
+                    <span style="color: #4CAF50;">② 이대역</span> 하차 - <br>
+                    <span style="color: #2196F3;">742번</span> 또는 
+                    <span style="color: #4CAF50;"> 7017번</span> 버스 <br>
+                    - 이대부중에서 하차 - 도보 7분 <br>
+                    <span style="color: #ffa200;">③ 경복궁역</span> 하차 - <br>
+                    <span style="color: #2196F3;">272번</span> 또는 
+                    <span style="color: #2196F3;">710번</span> 버스 <br>
+                    - 이대부중/이대부고에서 하차 - 도보 7분 <br>
+                </p>
+                <p>
+                    <p>주차안내</p>
+                    연세대 에비슨의생명연구센타 (지하) <br>
+                    연세대 상남경영원주차장 (지상)<br>
+                    연세대 어린이생활지도연구원 주차장 (지상)<br>    
+                </p>    
+            </div>            
         </section>
         <!-- 06_Contact -->
          <!-- 가능하다면 방명록 기능도 넣고 싶다고 함 -->
-        <section class="section text-center">
+        <section class="section text-center" style="background-color: rgba(253, 244, 233, 0.712);">
             <p>
                 참석이 어려워 직접 축하를 전하지 못하는<br>
                 분들을 위해 기재하였습니다.<br>
@@ -129,16 +142,21 @@
                 좋은 부부의 모습으로 보답하겠습니다.
             </p>
             <div class="account-info">
-                <p>👨 신랑측</p>
-                <p>혼주 권미애 국민 101010101010101000000</p>
+                <span class="account-icon">👨 신랑측</span>
+                <span class="account-details">혼주 권미애 국민 101010101010101000000</span>
                 <button onclick="copyToClipboard('101010101010101000000')">계좌번호 복사하기</button>
             </div>
             <div class="account-info">
-                <p>👰 신부측</p>
-                <p>혼주 홍태표 국민 101010101010101000000</p>
+                <span class="account-icon">👰 신부측</span>
+                <span class="account-details">혼주 홍태표 국민 101010101010101000000</span>
                 <button onclick="copyToClipboard('101010101010101000000')">계좌번호 복사하기</button>
             </div>
         </section>
+        <!-- 07_Last Image -->
+        <section class="section text-center">
+            <h2><span class="leaf"></span> Last Image </h2>
+            <div class="video-placeholder">Last Image Placeholder</div>
+          </section>
     </div>
 
     

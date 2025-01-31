@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
       center: new naver.maps.LatLng(37.564585, 126.942297), // 알렌관 위도 경도 37.564585 / 126.942297
       zoom: 18, // 지도의 초기 줌 레벨
       minZoom: 8, //지도의 최소 줌 레벨
-      zoomControl: true, //줌 컨트롤의 표시 여부
+      zoomControl: false, //줌 컨트롤의 표시 여부
       zoomControlOptions: { //줌 컨트롤의 옵션
         position: naver.maps.Position.TOP_RIGHT
   }});
